@@ -1,4 +1,4 @@
-# CICD-workshop-tps-onsite-2026
+# cicd-workshop-tps-onsite-2026
 
 GitHub Actions でビルド・テスト・GitHub Pages デプロイを行い、Datadog CI Visibility でパイプライン時間を比較するワークショップ用リポジトリです。
 
@@ -14,10 +14,16 @@ npm run build
 
 成果物は `dist/index.html` です。
 
+## 事前準備（Fork と Datadog側の有効化）
+
+1. このリポジトリを Fork する。
+2. Datadog 側で GitHub Apps の Integration を有効化し、対象を Fork したリポジトリに設定する。
+3. Datadog の CI Visibility から、Fork したリポジトリを対象に設定を有効化する。
+
+
 ## GitHub の設定（初回）
 
 1. **Settings → Pages → Build and deployment**: Source を **GitHub Actions** にする。
-2. Datadog と GitHub の連携、および Datadog で CI Visibility を有効化する（事前準備リストに従う）。
 
 ## ブランチとワークフロー
 
