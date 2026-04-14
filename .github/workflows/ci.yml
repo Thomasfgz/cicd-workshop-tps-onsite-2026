@@ -42,7 +42,7 @@ jobs:
       - name: Artificial delay (workshop — remove this entire step in the FAST profile)
         run: |
           echo "Simulating a slow CI step for Datadog comparison..."
-          sleep 45
+          sleep 60
 
       - name: Install dependencies
         run: npm ci
