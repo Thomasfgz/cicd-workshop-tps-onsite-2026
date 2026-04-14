@@ -5,6 +5,12 @@ on:
     branches:
       - main
       - dev
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deploy environment'
+        required: true
+        default: 'main'
 
 permissions:
   contents: read
