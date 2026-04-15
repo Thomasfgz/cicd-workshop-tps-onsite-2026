@@ -9,5 +9,5 @@ const indexPath = path.join(__dirname, "..", "src", "index.html");
 
 test("welcome copy exists in source HTML", () => {
   const html = fs.readFileSync(indexPath, "utf8");
-  assert.ok(html.includes("Welcome to TPS Onsite 2025!!"));
+  assert.ok(html.includes("Welcome to TPS Onsite 2026!!"));
 });
